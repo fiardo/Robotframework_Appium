@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-02-11T23:14:47.396692" rpa="false" schemaversion="5">
+<suite id="s1" name="Open Application" source="C:\Users\TUL\Desktop\Automation\robotframework\Open_Application.robot">
+<test id="s1-t1" name="Open_Application" line="6">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-02-11T23:14:50.033976" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-02-11T23:14:50.033801" elapsed="0.094920">No application is open</status>
+</kw>
+<msg time="2024-02-11T23:14:50.129716" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-02-11T23:14:50.131711" level="FAIL">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</msg>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName='emulator-5554'</arg>
+<arg>appPackage=com.universityliving</arg>
+<arg>appActivity=com.universityliving.MainActivity</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2024-02-11T23:14:47.961854" elapsed="2.170854">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</kw>
+<status status="FAIL" start="2024-02-11T23:14:47.959861" elapsed="2.172847">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</test>
+<doc>Simple example using AppiumLibrary</doc>
+<status status="FAIL" start="2024-02-11T23:14:47.399688" elapsed="2.735014"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Open Application">Open Application</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-11T23:14:50.129716" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
