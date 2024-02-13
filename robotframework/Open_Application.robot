@@ -14,9 +14,14 @@ ${Walkthroughscreen_login/signup}           //android.widget.TextView[@text="Log
 
 ####### Login #############
 
-${Login_email}     //android.widget.EditText
-${Login_BUTTON}   //android.view.ViewGroup[@content-desc="Login"]
-#(//android.widget.TextView[@text="Login"])[2]
+${Login_email}                                //android.widget.EditText
+${Login_BUTTON}         //android.view.ViewGroup[@content-desc="Login"]
+${OTP_1}          //android.widget.EditText[@content-desc="otpInput-0"]
+${OTP_2}          //android.widget.EditText[@content-desc="otpInput-1"]
+${OTP_3}          //android.widget.EditText[@content-desc="otpInput-2"]
+${OTP_4}          //android.widget.EditText[@content-desc="otpInput-3"]
+${OTP_5}          //android.widget.EditText[@content-desc="otpInput-4"]
+
 
 
 
@@ -37,7 +42,11 @@ Open_Application
     Input Text       ${Login_email}    pravin.garg@universityliving.com
     Click Element    ${Login_BUTTON}
     Sleep    5s
-
+    Input Text      ${OTP_1}    1
+     Input Text     ${OTP_2}    2
+     Input Text     ${OTP_3}    3
+     Input Text     ${OTP_4}    4
+     Input Text     ${OTP_5}    5
 
 
 
