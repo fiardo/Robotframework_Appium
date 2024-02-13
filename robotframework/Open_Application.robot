@@ -21,9 +21,10 @@ ${OTP_2}          //android.widget.EditText[@content-desc="otpInput-1"]
 ${OTP_3}          //android.widget.EditText[@content-desc="otpInput-2"]
 ${OTP_4}          //android.widget.EditText[@content-desc="otpInput-3"]
 ${OTP_5}          //android.widget.EditText[@content-desc="otpInput-4"]
-
-
-
+${USP_SCREEN}              //android.widget.EditText[@text="Discover city, university, property"]
+${Countrypage_UK}             //android.widget.TextView[@text="UK"]
+${Citypage_London}           //android.widget.TextView[@text="London"]
+${London_Homepage}      //android.widget.TextView[@text="London, UK"]
 
 
 *** Test Cases ***
@@ -42,11 +43,17 @@ Open_Application
     Input Text       ${Login_email}    pravin.garg@universityliving.com
     Click Element    ${Login_BUTTON}
     Sleep    5s
-    Input Text      ${OTP_1}    1
-     Input Text     ${OTP_2}    2
-     Input Text     ${OTP_3}    3
-     Input Text     ${OTP_4}    4
-     Input Text     ${OTP_5}    5
-
+    Input Text                          ${OTP_1}    1
+    Input Text                          ${OTP_2}    2
+    Input Text                          ${OTP_3}    3
+    Input Text                          ${OTP_4}    4
+    Input Text                          ${OTP_5}    5
+    Click Element                       ${USP_SCREEN}
+    Sleep   2s
+    Click Element                       ${Countrypage_UK}
+    Sleep   2s
+    Click Element                       ${Citypage_London}
+    Sleep   2s
+    Wait Until Page Contains Element    ${London_Homepage}
 
 
