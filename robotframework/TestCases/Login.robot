@@ -21,6 +21,8 @@ ${USP_SCREEN}              //android.widget.EditText[@text="Discover city, unive
 ${Countrypage_UK}             //android.widget.TextView[@text="UK"]
 ${Citypage_London}           //android.widget.TextView[@text="London"]
 ${London_Homepage}      //android.widget.TextView[@text="London, UK"]
+${Hamburger}        //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView
+${LoggedIn_email}        //android.widget.TextView[@text="pravin.garg@universityliving.com"]
 
 *** Keywords ***
 Custom Wait And Click
@@ -53,4 +55,5 @@ Test Case 1 - Login with OTP
     Custom Wait And Click    ${USP_SCREEN}
     Custom Wait And Click    ${Countrypage_UK}
     Custom Wait And Click    ${Citypage_London}
-    Wait Until Page Contains Element    ${London_Homepage}
+    Custom Wait And Click    ${Hamburger}
+    Wait Until Page Contains Element    ${LoggedIn_email}
